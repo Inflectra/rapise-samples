@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
+  <ScriptPath>ChromeDragAndDrop.js</ScriptPath>
+  <UserFunctionsPath>ChromeDragAndDrop.user.js</UserFunctionsPath>
+  <ObjectsPath>ChromeDragAndDrop.objects.js</ObjectsPath>
+  <ReportPath>ChromeDragAndDrop.trp</ReportPath>
+  <CommandInterval>100</CommandInterval>
+  <IterationsCount>1</IterationsCount>
+  <StopOnError>false</StopOnError>
+  <CacheObjects>false</CacheObjects>
+  <ObjectLookupAttempts>5</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
+  <ShowReport>true</ShowReport>
+  <BeautifySavedObjects>true</BeautifySavedObjects>
+  <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
+  <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
+  <SavePlaybackScreenshotsInTestReport>false</SavePlaybackScreenshotsInTestReport>
+  <SaveScreenshotObjectOnly>false</SaveScreenshotObjectOnly>
+  <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
+  <CommandLine />
+  <EntryPoint>Test</EntryPoint>
+  <WorkDir>.</WorkDir>
+  <TestFiles>
+    <Name>Test</Name>
+    <IsFilterGroup>false</IsFilterGroup>
+    <FilterWildcard>*.*</FilterWildcard>
+    <FilterPath />
+    <Groups>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
+        <Name>Sandbox</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>Sandbox\ComboBox.png</Path>
+          </TestFile>
+          <TestFile>
+            <Path>Sandbox\Console.png</Path>
+          </TestFile>
+          <TestFile>
+            <Path>Sandbox\ContextManu.png</Path>
+          </TestFile>
+          <TestFile>
+            <Path>Sandbox\DatePicker.png</Path>
+          </TestFile>
+          <TestFile>
+            <Path>Sandbox\Edit.png</Path>
+          </TestFile>
+          <TestFile>
+            <Path>Sandbox\Filter.png</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+      <TestGroup>
+        <Name>Scripts</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>ChromeDragAndDrop.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>ChromeDragAndDrop.objects.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>ChromeDragAndDrop.user.js</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+    </Groups>
+    <TestFiles />
+  </TestFiles>
+  <CustomStrings />
+  <TestParams>
+    <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Chrome HTML" description="Please, specify browser type to use" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+  </TestParams>
+  <Methodology>Web</Methodology>
+  <MethodologyOptions>
+    <ArrayOfObjectParam />
+  </MethodologyOptions>
+</Test>
