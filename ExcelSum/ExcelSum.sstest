@@ -69,9 +69,6 @@
       <TestFile>
         <Path>Book1.xlsx</Path>
       </TestFile>
-      <TestFile>
-        <Path>%ENGINE%\Engine.sstest</Path>
-      </TestFile>
     </TestFiles>
   </TestFiles>
   <CustomStrings />

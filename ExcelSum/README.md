@@ -7,3 +7,5 @@ This sample demonstrates how to make calculations in Excel and save a screenshot
 - Calculate SUM of column G
 - Scroll to the SUM value
 - Make a screenshot
+
+![Screenshot Example](Media/ExcelSum.png)
