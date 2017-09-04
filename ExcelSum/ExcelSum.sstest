@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
+  <ScriptPath>ExcelSum.js</ScriptPath>
+  <UserFunctionsPath>ExcelSum.user.js</UserFunctionsPath>
+  <ObjectsPath>ExcelSum.objects.js</ObjectsPath>
+  <ReportPath>ExcelSum.trp</ReportPath>
+  <CommandInterval>100</CommandInterval>
+  <IterationsCount>1</IterationsCount>
+  <StopOnError>false</StopOnError>
+  <CacheObjects>false</CacheObjects>
+  <ObjectLookupAttempts>5</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
+  <ShowReport>true</ShowReport>
+  <BeautifySavedObjects>true</BeautifySavedObjects>
+  <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
+  <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
+  <SavePlaybackScreenshotsInTestReport>false</SavePlaybackScreenshotsInTestReport>
+  <SaveScreenshotObjectOnly>false</SaveScreenshotObjectOnly>
+  <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
+  <CommandLine />
+  <EntryPoint>Test</EntryPoint>
+  <WorkDir>.</WorkDir>
+  <TestFiles>
+    <Name>Test</Name>
+    <IsFilterGroup>false</IsFilterGroup>
+    <FilterWildcard>*.*</FilterWildcard>
+    <FilterPath />
+    <Groups>
+      <TestGroup>
+        <Name>References</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>Excel.xml</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
+        <Name>Scripts</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>ExcelSum.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>ExcelSum.objects.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>ExcelSum.user.js</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+    </Groups>
+    <TestFiles>
+      <TestFile>
+        <Path>Book1.xlsx</Path>
+      </TestFile>
+      <TestFile>
+        <Path>%ENGINE%\Engine.sstest</Path>
+      </TestFile>
+    </TestFiles>
+  </TestFiles>
+  <CustomStrings />
+  <TestParams />
+  <Methodology>Basic</Methodology>
+  <MethodologyOptions>
+    <ArrayOfObjectParam />
+  </MethodologyOptions>
+</Test>
