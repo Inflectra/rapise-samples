@@ -1,0 +1,1982 @@
+{
+	"Log_In": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_class": "IEFrame",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Link",
+		"object_name": "Log In",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Inflectra | Library Information System - Internet Explorer",
+		"xpath": "//a[@id='HeadLoginView_HeadLoginStatus']",
+		"title": "Inflectra | Library Information System",
+		"url": "http://libraryinformationsystem.org/"
+	},
+	"Username_": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_class": "IEFrame",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Text",
+		"object_name": "Username:",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Library Information System | Log In - Internet Explorer",
+		"xpath": "//input[@id='MainContent_LoginUser_UserName' and @name='ctl00$MainContent$LoginUser$UserName']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx"
+	},
+	"Password_": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_class": "IEFrame",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Text",
+		"object_name": "Password:",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Library Information System | Log In - Internet Explorer",
+		"xpath": "//input[@id='MainContent_LoginUser_Password' and @name='ctl00$MainContent$LoginUser$Password']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx"
+	},
+	"ctl00$MainContent$LoginUser$Logi": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_class": "IEFrame",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "ctl00$MainContent$LoginUser$LoginButton",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Library Information System | Log In - Internet Explorer",
+		"xpath": "//input[@id='MainContent_LoginUser_LoginButton' and @name='ctl00$MainContent$LoginUser$LoginButton']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx"
+	},
+	"Log_Out": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_class": "IEFrame",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Link",
+		"object_name": "Log Out",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Inflectra | Library Information System - Internet Explorer",
+		"xpath": "//a[@id='HeadLoginView_HeadLoginStatus']",
+		"title": "Inflectra | Library Information System",
+		"url": "http://libraryinformationsystem.org/default.aspx"
+	}
+}
