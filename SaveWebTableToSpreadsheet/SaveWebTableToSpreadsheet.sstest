@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
+  <ScriptPath>SaveWebTableToSpreadsheet.js</ScriptPath>
+  <UserFunctionsPath>SaveWebTableToSpreadsheet.user.js</UserFunctionsPath>
+  <ObjectsPath>SaveWebTableToSpreadsheet.objects.js</ObjectsPath>
+  <ReportPath>SaveWebTableToSpreadsheet.trp</ReportPath>
+  <CommandInterval>1000</CommandInterval>
+  <IterationsCount>1</IterationsCount>
+  <StopOnError>true</StopOnError>
+  <CacheObjects>false</CacheObjects>
+  <ObjectLookupAttempts>5</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
+  <ShowReport>true</ShowReport>
+  <BeautifySavedObjects>true</BeautifySavedObjects>
+  <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
+  <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
+  <SavePlaybackScreenshotsInTestReport>false</SavePlaybackScreenshotsInTestReport>
+  <SaveScreenshotObjectOnly>false</SaveScreenshotObjectOnly>
+  <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
+  <CommandLine />
+  <EntryPoint>Test</EntryPoint>
+  <WorkDir>.</WorkDir>
+  <TestFiles>
+    <Name>Test</Name>
+    <IsFilterGroup>false</IsFilterGroup>
+    <FilterWildcard>*.*</FilterWildcard>
+    <FilterPath />
+    <Groups>
+      <TestGroup>
+        <Name>Lib</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups>
+          <TestGroup>
+            <Name>LibMetaTable</Name>
+            <IsFilterGroup>false</IsFilterGroup>
+            <FilterWildcard>*.*</FilterWildcard>
+            <FilterPath />
+            <Groups />
+            <TestFiles>
+              <TestFile>
+                <Path>C:\Work\Inflectra\InflectraGitProjects\rapise-samples\SaveWebTableToSpreadsheet\Lib\LibMetaTable\LibMetaTable.js</Path>
+              </TestFile>
+            </TestFiles>
+          </TestGroup>
+        </Groups>
+        <TestFiles>
+          <TestFile>
+            <Path>C:\Work\Inflectra\InflectraGitProjects\rapise-samples\SaveWebTableToSpreadsheet\Lib\LibMetaTable.jslib</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
+        <Name>Scripts</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>C:\Users\squirrel\Documents\My Rapise Tests\RPADemo2\Data.xlsx</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SaveWebTableToSpreadsheet.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SaveWebTableToSpreadsheet.objects.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SaveWebTableToSpreadsheet.rvl.xlsx</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SaveWebTableToSpreadsheet.user.js</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+    </Groups>
+    <TestFiles>
+      <TestFile>
+        <Path>%ENGINE%\Engine.sstest</Path>
+      </TestFile>
+    </TestFiles>
+  </TestFiles>
+  <CustomStrings />
+  <TestParams>
+    <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Firefox HTML" description="Please, specify browser type to use" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="SaveWebTableToSpreadsheet.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="False" description="Enable web plugins auto detection" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+  </TestParams>
+  <Methodology>Web</Methodology>
+  <MethodologyOptions>
+    <ArrayOfObjectParam />
+  </MethodologyOptions>
+</Test>
