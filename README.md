@@ -1,5 +1,5 @@
 # rapise-samples
 
-Sample Rapise tests demonstrating capabilities of the tool.
+In this repository we collect sample Rapise tests that show power of the tool.
 
-Click on a test name to see a short description of its functionality.
+Click on a test name to see a short description of it does.
