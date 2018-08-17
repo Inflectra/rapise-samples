@@ -4,4 +4,4 @@ The test finds a cell in a dynamically generated table and compares it to expect
 
 See the table on [UI Test Automation Playground](http://uitestingplayground.com/dynamictable).
 
-![Dynamic Table](DynamicTable.png)
+<img alt="Dynamic Table" src="DynamicTable.png" width="669px"/>
