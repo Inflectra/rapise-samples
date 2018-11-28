@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
+  <ScriptPath>SeleniumAPI.js</ScriptPath>
+  <UserFunctionsPath>SeleniumAPI.user.js</UserFunctionsPath>
+  <ObjectsPath>SeleniumAPI.objects.js</ObjectsPath>
+  <ReportPath>SeleniumAPI.trp</ReportPath>
+  <CommandInterval>1000</CommandInterval>
+  <IterationsCount>1</IterationsCount>
+  <StopOnError>false</StopOnError>
+  <CacheObjects>false</CacheObjects>
+  <ObjectLookupAttempts>5</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
+  <ShowReport>true</ShowReport>
+  <BeautifySavedObjects>true</BeautifySavedObjects>
+  <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
+  <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
+  <SavePlaybackScreenshotsInTestReport>false</SavePlaybackScreenshotsInTestReport>
+  <SaveScreenshotObjectOnly>false</SaveScreenshotObjectOnly>
+  <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
+  <CommandLine />
+  <EntryPoint>Test</EntryPoint>
+  <WorkDir>.</WorkDir>
+  <TestFiles>
+    <Name>Test</Name>
+    <IsFilterGroup>false</IsFilterGroup>
+    <FilterWildcard>*.*</FilterWildcard>
+    <FilterPath />
+    <Groups>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
+        <Name>Scripts</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>SeleniumAPI.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SeleniumAPI.objects.js</Path>
+          </TestFile>
+          <TestFile>
+            <Path>SeleniumAPI.user.js</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+    </Groups>
+    <TestFiles />
+  </TestFiles>
+  <CustomStrings />
+  <TestParams>
+    <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Selenium - Chrome" description="Please, specify browser type to use" output="false" ask="false">
+      <PossibleValues>
+        <string>Internet Explorer HTML</string>
+        <string>Firefox HTML</string>
+        <string>Chrome HTML</string>
+        <string>Selenium</string>
+      </PossibleValues>
+    </TestParam>
+    <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
+      <PossibleValues>
+        <string>Library Information System | Log In - Internet Explorer</string>
+      </PossibleValues>
+    </TestParam>
+  </TestParams>
+  <Methodology>Web</Methodology>
+  <MethodologyOptions>
+    <ArrayOfObjectParam />
+  </MethodologyOptions>
+</Test>

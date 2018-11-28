@@ -1,0 +1,2398 @@
+{
+	"Book_Management": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Inflectra | Library Information System - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Link",
+		"object_name": "Book Management",
+		"object_library": "Firefox HTML",
+		"window_name": "Inflectra | Library Information System - Mozilla Firefox",
+		"xpath": "/html/body/form[@id='ctl01']/div[3]/div[1]/div[3]/div[@id='NavigationMenu']/ul/li[2]/a",
+		"title": "Inflectra | Library Information System",
+		"url": "http://libraryinformationsystem.org/"
+	},
+	"Username_": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Library Information System | Log In - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Text",
+		"object_name": "Username:",
+		"object_library": "Firefox HTML",
+		"window_name": "Library Information System | Log In - Mozilla Firefox",
+		"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/fieldset/p[1]/input[@name='ctl00$MainContent$LoginUser$UserName' and @id='MainContent_LoginUser_UserName']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx"
+	},
+	"Password_": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Library Information System | Log In - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Text",
+		"object_name": "Password:",
+		"object_library": "Firefox HTML",
+		"window_name": "Library Information System | Log In - Mozilla Firefox",
+		"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/fieldset/p[2]/input[@name='ctl00$MainContent$LoginUser$Password' and @id='MainContent_LoginUser_Password']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx"
+	},
+	"Submit": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Library Information System | Log In - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "Submit",
+		"object_library": "Firefox HTML",
+		"window_name": "Library Information System | Log In - Mozilla Firefox",
+		"xpath": "/html/body/form[@id='ctl01']/div[3]/div[2]/div[2]/p/input[@name='ctl00$MainContent$LoginUser$LoginButton' and @id='MainContent_LoginUser_LoginButton']",
+		"title": "Library Information System | Log In",
+		"url": "http://libraryinformationsystem.org/Account/Login.aspx",
+		"ignore_object_name": true
+	},
+	"inputSelectMultiple": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": [
+			"Option1",
+			"Option2",
+			"Option3"
+		],
+		"window_text": "AUTHTML - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "\n\tOption1\n\tOption2\n\tOption3\n",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "List",
+		"object_name": "inputSelectMultiple",
+		"object_library": "Firefox HTML",
+		"window_name": "AUTHTML - Mozilla Firefox",
+		"xpath": "/html/body/form[@name='AUT']/select[@name='inputSelectMultiple' and @id='ctrl07']",
+		"title": "AUTHTML",
+		"url": "http://tanur.grinmark.com/allcontrols.html"
+	},
+	"inputSelect": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": [
+			"Option1",
+			"Option2",
+			"Option3"
+		],
+		"window_text": "AUTHTML - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "\n\tOption1\n\tOption2\n\tOption3\n",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "ComboBox",
+		"object_name": "inputSelect",
+		"object_library": "Firefox HTML",
+		"window_name": "AUTHTML - Mozilla Firefox",
+		"xpath": "/html/body/form[@name='AUT']/select[@name='inputSelect' and @id='ctrl06']",
+		"title": "AUTHTML",
+		"url": "http://tanur.grinmark.com/allcontrols.html"
+	},
+	"inputCheckbox": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": ""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": ""
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ bcheck"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "AUTHTML - Mozilla Firefox",
+		"window_class": "param:object_class",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "MozillaWindowClass",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "CheckBox",
+		"object_name": "inputCheckbox",
+		"object_library": "Firefox HTML",
+		"window_name": "AUTHTML - Mozilla Firefox",
+		"xpath": "/html/body/form[@name='AUT']/input[@name='inputCheckbox' and @id='ctrl10']",
+		"title": "AUTHTML",
+		"url": "http://tanur.grinmark.com/allcontrols.html"
+	}
+}
