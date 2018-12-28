@@ -38,6 +38,82 @@ function TestRawActions()
 }
 
 /** @scenario*/
+function TestCookies()
+{
+	if (typeof(WebDriver.Cookies) == "undefined")
+	{
+		return;
+	}
+	
+	function PrintAllCookies()
+	{
+		var cs = cookies.AllCookies();
+		Tester.Message(JSON.stringify(cs));
+		
+		for(var i = 0; i < cs.length; i++)
+		{
+			var c = cookies.GetCookieNamed(cs[i].Name);
+			Tester.Message(JSON.stringify(c));
+		}
+	}
+
+	Tester.BeginTest('Cookies');
+	WebDriver.CreateDriver();
+	WebDriver.SetUrl("https://google.com");
+	Global.DoSleep(2000);
+	
+	var cookies = WebDriver.Cookies();
+	
+	var startCookieCount = cookies.AllCookies().length;
+
+	var mySimpleCookie = {Name: "MySimpleCookie", Value: "MyValue"};
+	cookies.AddCookie(mySimpleCookie);
+	cookies.AddCookie({Name: "MyComplexCookie", Value: "MyValue", Domain: ".google.com", Path: "/"});
+
+	// Construct date-time string in the format "2018-12-30T13:15:00-05:00"	
+	var dt = new Date();
+	var expDate = UtilGetPaddedZeroesDate(dt) + "T" + UtilGetPaddedZeroesTime(dt) + "-05:00";
+	
+	cookies.AddCookie({Name: "MyExpiringCookie", Value: "MyValue", Domain: ".google.com", Path: "/", Expiry: expDate});
+
+	var afterAddCookieCount = cookies.AllCookies().length;
+	
+	Tester.AssertEqual("Cookies added", (startCookieCount + 3), afterAddCookieCount)
+
+	PrintAllCookies();
+	
+	
+	var foundCookie = cookies.GetCookieNamed("MySimpleCookie");
+	Tester.Assert("Cookie found", foundCookie != null);
+
+	var notFoundCookie = cookies.GetCookieNamed("MyNotFoundCookie");
+	Tester.Assert("Cookie not found", notFoundCookie == null);
+	
+	Tester.Message("Then we delete cookies:");
+	
+	cookies.DeleteCookie(mySimpleCookie);
+	cookies.DeleteCookieNamed("MyComplexCookie");
+	
+	var afterDeleteCookieCount = cookies.AllCookies().length;
+	Tester.AssertEqual("Cookies deleted", (afterAddCookieCount - 2), afterDeleteCookieCount)
+	
+	PrintAllCookies();	
+	
+	Tester.Message("Deleting all cookies");
+	
+	cookies.DeleteAllCookies();
+	
+	var afterDeleteAllCookieCount = cookies.AllCookies().length;
+	Tester.AssertEqual("All cookies deleted", 0, afterDeleteAllCookieCount);
+	
+	PrintAllCookies();	
+	
+	Global.DoSleep(1000);
+	WebDriver.Quit();
+	Tester.EndTest();
+}
+
+/** @scenario*/
 function TestObjectAPI()
 {	
 	Tester.BeginTest('Object API');

@@ -5,6 +5,9 @@ function Test()
 	TestRawAPI();
 	TestRawActions();
 	
+	// Browser cookies
+	TestCookies();
+	
 	// Rapise API operating via WebDriver
 	TestObjectAPI();
 	TestAlert();
