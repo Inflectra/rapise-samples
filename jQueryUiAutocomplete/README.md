@@ -13,9 +13,25 @@ Searching for dropdown item by changing locator of an element we've learned duri
 
 Searching for dropdown item by changing locator of an element we've learned during recording. JavaScript version.
 
+```javascript
+function SelectValue1(/**string*/ value)
+{
+	// update object properties to find it
+	SeS('DropdownItem', { xpath: "//iframe@@@//div[text()='" + value + "']" }).DoClick();
+}
+```
+
 ## Method 3
 
 Dynamically find dropdown item by XPATH. JavaScript version via Navigator.DOMFindByXPath.
+
+```javascript
+function SelectValue2(/**string*/ value)
+{
+	// find object dynaically
+	Navigator.DOMFindByXPath("//iframe@@@//div[text()='" + value + "']").DoClick();
+}
+```
 
 ## Playback
 
