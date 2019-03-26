@@ -37,7 +37,35 @@ function TestRawActions()
 	Tester.EndTest();
 }
 
-/** @scenario*/
+/** @scenario */
+function TestWindow()
+{
+	if (typeof(WebDriver.Window) == "undefined")
+	{
+		return;
+	}
+
+	Tester.BeginTest("Window");
+	WebDriver.CreateDriver();
+	WebDriver.SetUrl("http://libraryinformationsystem.org");
+	WebDriver.Window().SetSize(300, 800);
+	WebDriver.Window().SetPosition(200, 50);
+	Global.DoSleep(3000);
+	var position = WebDriver.Window().GetPosition();
+	var size = WebDriver.Window().GetSize();
+	Tester.Message("x = " + position.X + ", y = " + position.Y);
+	Tester.Message("width = " + size.Width + ", height = " + size.height);
+	WebDriver.Window().Maximize();
+	Global.DoSleep(1000);
+	WebDriver.Window().Minimize();
+	Global.DoSleep(1000);
+	WebDriver.Window().FullScreen();
+	Global.DoSleep(3000);	
+	WebDriver.Quit();
+	Tester.EndTest();
+}
+
+/** @scenario */
 function TestCookies()
 {
 	if (typeof(WebDriver.Cookies) == "undefined")

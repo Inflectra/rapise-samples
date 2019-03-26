@@ -5,6 +5,9 @@ function Test()
 	TestRawAPI();
 	TestRawActions();
 	
+	// Window
+	TestWindow();
+	
 	// Browser cookies
 	TestCookies();
 	
