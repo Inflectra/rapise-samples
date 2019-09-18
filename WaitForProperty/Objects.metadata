@@ -1,0 +1,520 @@
+{
+	"LoadingForm": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "/**String*/ clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps"
+			},
+			{
+				"name": "DoGetWidgetProperty",
+				"signature": "name"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ControlType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "param:object_text",
+		"window_class": "param:object_class",
+		"object_text": "Ready",
+		"object_role": "param:object_flavor",
+		"object_class": "WindowsForms10.Window.8.app.0.2bf8098_r11_ad1",
+		"version": 0,
+		"object_type": "ManagedObject",
+		"object_flavor": "Managed",
+		"object_name": "LoadingForm",
+		"window_name": "param:object_text",
+		"location": "LoadingForm"
+	},
+	"Proceed__": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "/**String*/ clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps"
+			},
+			{
+				"name": "DoGetWidgetProperty",
+				"signature": "name"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ControlType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Ready",
+		"window_class": "WindowsForms10.Window.8.app.0.2bf8098_r11_ad1",
+		"object_text": "param:object_name",
+		"object_role": "param:object_flavor",
+		"object_class": "WindowsForms10.BUTTON.app.0.2bf8098_r11_ad1",
+		"version": 0,
+		"object_type": "ManagedButton",
+		"object_flavor": "Button",
+		"object_name": "Proceed>>",
+		"object_library": "Managed",
+		"window_name": "Ready",
+		"location": "LoadingForm.buttonProceed"
+	},
+	"OK": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": ""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": ""
+			},
+			{
+				"name": "DoClick",
+				"signature": "/**String*/ clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": ""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": ""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Ready",
+		"window_class": "WindowsForms10.Window.8.app.0.2bf8098_r11_ad1",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_PUSHBUTTON",
+		"object_class": "Button",
+		"version": 0,
+		"object_type": "SeSSimulated",
+		"object_flavor": "Simulated",
+		"object_name": "OK",
+		"window_name": "Ready"
+	}
+}
