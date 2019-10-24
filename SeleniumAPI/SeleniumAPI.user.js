@@ -9,12 +9,84 @@ function TestRawAPI()
 	var el = WebDriver.FindElementByXPath("//body");
 	Tester.Assert("Text found in BODY", el.GetText().indexOf("Library Information System") != -1);
 	var logInLink = el.FindElementByXPath("id('HeadLoginView_HeadLoginStatus')");
+	
+	// Element properties
+	var l = logInLink;
+	//l.GetCoordinates();
+	Tester.AssertEqual("Displayed", true, l.GetDisplayed());
+	Tester.AssertEqual("Enabled", true, l.GetEnabled());
+	Tester.Assert("Location", l.GetLocation().X > 0);
+	Tester.Assert("ScrolledLocation", l.GetLocationOnScreenOnceScrolledIntoView().X > 0);
+	Tester.AssertEqual("Selected", false, l.GetSelected());
+	Tester.Assert("Size", l.GetSize().Width > 0);
+	Tester.AssertEqual("TagName", "a", l.GetTagName());
+	Tester.AssertEqual("Text", "Log In", l.GetText());
+	Tester.AssertEqual("Attribute", "HeadLoginView_HeadLoginStatus", l.GetAttribute("id"));	
+	Tester.AssertEqual("Cssvalue", "auto", l.GetCssValue("width"));
+	
+	
 	logInLink.Click();
 	Global.DoSleep(3000);
 	var userName = WebDriver.FindElementByCssSelector("html > body > form > div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(2) > fieldset > p:first-of-type > input");
 	Tester.AssertEqual("class is 'textbox'", "textbox", userName.GetAttribute("class"));
+	
+	// Element actions
+	userName.Clear();
+	userName.Click();
+	userName.ClickAt(5, 5);
+	userName.DoubleClick();
+	userName.ContextClick();
+	userName.SendKeys("librarian");
+	userName.Submit();
+	
 	WebDriver.Quit();
 	Tester.EndTest();
+}
+
+function TestRawAPIAdvanced()
+{
+	Tester.BeginTest('Raw API Advanced');
+ 	WebDriver.CreateDriver();
+ 	
+	var navigateUrl = "http://libraryinformationsystem.org/HtmlTest.htm";
+	WebDriver.SetUrl(navigateUrl);
+	
+	var url = WebDriver.GetUrl();
+	Tester.AssertEqual("URL is ok", navigateUrl, url);
+
+	var title = WebDriver.GetTitle();
+	Tester.AssertEqual("Title is ok", "HTML Control List",title);
+	
+	var pageSource = WebDriver.GetPageSource();
+	Tester.Assert("Page Source is ok", pageSource != null);
+	
+	var windowHandle = WebDriver.GetCurrentWindowHandle();
+	Tester.Assert("Window Handle ok", windowHandle != -1);
+	
+	var handles = WebDriver.GetWindowHandles();
+	Tester.Assert("Handles ok", handles && handles.length == 1);
+	
+	WebDriver.SetBrowserSize(640, 480);
+	var sessionId = WebDriver.GetSessionId();
+	Tester.Assert("Session ID is ok", sessionId != null);
+	
+	//var remoteServerUri = WebDriver.GetAddressOfRemoteServer();
+	//Tester.Assert("Remote Server URI is ok", remoteServerUri != null);
+	
+	var ssName = "Screenshot.png";
+	File.Delete(ssName);
+	var s = WebDriver.GetScreenshot();
+	s.SaveAsFile(ssName, "png");
+	Tester.Assert("Screenshot ok", File.Exists(ssName));
+	
+	ssName = "IWScreenshot.png";
+	File.Delete(ssName);
+	var iw = WebDriver.GetScreenshotIW();
+	iw.Save(ssName);
+	Tester.Assert("IW Screenshot is ok", File.Exists(ssName));
+	
+	WebDriver.Quit();
+	Tester.EndTest();	
 }
 
 /** @scenario*/
@@ -23,14 +95,29 @@ function TestRawActions()
 	Tester.BeginTest('Raw Actions');
 	WebDriver.CreateDriver();
 	
-	WebDriver.SetUrl("http://libraryinformationsystem.org/HtmlTest.htm");
+	var navigateUrl = "http://libraryinformationsystem.org/HtmlTest.htm";
+	WebDriver.SetUrl(navigateUrl);
 
 	var el1 = WebDriver.FindElementByXPath("//select[@id='ctrl07']/option[1]");
 	var el2 = WebDriver.FindElementByXPath("//select[@id='ctrl07']/option[2]");
-	var el3 = WebDriver.FindElementByXPath("//select[@id='ctrl07']/option[3]");
-	
+    var el3 = WebDriver.FindElementByXPath("//select[@id='ctrl07']/option[3]");
+    
 	WebDriver.Actions().KeyDown("Shift").Click(el1).Click(el2).Click(el3).KeyUp("Shift").Perform();
 	
+	WebDriver.Actions().Click().DoubleClick().DoubleClick(el1).Perform();
+	WebDriver.Actions().DragAndDrop(el1, el2).Perform();
+	WebDriver.Actions().DragAndDropToOffset(el1, 10 ,20).Perform();
+	WebDriver.Actions().MoveByOffset(10 ,20).Perform();
+	WebDriver.Actions().MoveToElement(el1).MoveToElement(el1, 10, 20).Perform();
+	WebDriver.Actions().Release(el1).Release(el1, 10, 20).Perform();
+	
+	var textEl = WebDriver.FindElementByXPath('//input[@id="txtText"]');
+	WebDriver.Actions().Click(textEl).SendKeys("hello", textEl).SendKeys(" world").Perform();
+	var text = textEl.GetText();
+	Tester.Assert("Text is ok", "hello world", text);
+	
+	var sEl = WebDriver.FindElementByXPath("//select[@id='ctrl07']");
+	sEl.SelectOptionByText("Option2");
 	
 	Global.DoSleep(1000);
 	WebDriver.Quit();
@@ -48,13 +135,18 @@ function TestWindow()
 	Tester.BeginTest("Window");
 	WebDriver.CreateDriver();
 	WebDriver.SetUrl("http://libraryinformationsystem.org");
-	WebDriver.Window().SetSize(300, 800);
+	WebDriver.Window().SetSize(600, 800);
 	WebDriver.Window().SetPosition(200, 50);
 	Global.DoSleep(3000);
 	var position = WebDriver.Window().GetPosition();
 	var size = WebDriver.Window().GetSize();
 	Tester.Message("x = " + position.X + ", y = " + position.Y);
-	Tester.Message("width = " + size.Width + ", height = " + size.height);
+	Tester.AssertEqual('Window X', 200, position.X);
+	Tester.AssertEqual('Window Y', 50, position.Y);
+	Tester.AssertEqual('Window Width', 600, size.Width);
+	Tester.AssertEqual('Window Height', 800, size.Height);
+	Tester.Message("width = " + size.Width + ", height = " + size.Height);
+	
 	WebDriver.Window().Maximize();
 	Global.DoSleep(1000);
 	WebDriver.Window().Minimize();
@@ -145,6 +237,7 @@ function TestCookies()
 function TestObjectAPI()
 {	
 	Tester.BeginTest('Object API');
+	g_seleniumDriver = null;
 	Navigator.Open("http://www.libraryinformationsystem.org");
 	SeS('Book_Management').DoClick();
 	Global.DoSleep(3000);
@@ -229,10 +322,10 @@ function TestObjectProperties()
 	var body = Navigator.DOMFindByXPath("//body");
 	var textarea = Navigator.DOMFindByXPath("id('ctrl05')");
 	
-	Tester.AssertEqual("X = 81", 81, checkbox.GetX());
-	Tester.AssertEqual("Y = 380", 380, checkbox.GetY());
-	Tester.AssertEqual("Width = 13", 13, checkbox.GetWidth())
-	Tester.AssertEqual("Height = 13 ", 13, checkbox.GetHeight());
+	Tester.Assert("X > 0", checkbox.GetX() > 0);
+	Tester.Assert("Y > 0", checkbox.GetY() > 0);
+	Tester.Assert("Width > 0", checkbox.GetWidth() > 0);
+	Tester.Assert("Height > 0", checkbox.GetHeight() > 0);
 	
 	Tester.AssertEqual("Label is null", null, logArea.GetLabel());
 	Tester.AssertEqual("Name is 'inputCheckBox'", "inputCheckbox", checkbox.GetName());

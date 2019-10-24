@@ -3,6 +3,7 @@ function Test()
 {
 	// Raw Selenium API
 	TestRawAPI();
+	TestRawAPIAdvanced();	
 	TestRawActions();
 	
 	// Window
