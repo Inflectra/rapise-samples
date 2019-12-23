@@ -12,10 +12,10 @@ Here we have:
 
 The call syntax would be the following. In the `srcsheet`:
 
-*Flow*|*Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
-:--  |:--     |:--         |:--         |:--          |:--         |:--
-     | Action | RVL     | DoPlaySheet    |  **sheetName**| **string** | `dstsheet` 
-     | Param  |            |            |  `dstmap` | **expression**| `srcmap`
+*Flow* | *Type* |*Object*    |*Action*    | *ParamName* |*ParamType* |*ParamValue*
+:--   |:--      |:--         |:--         |:--          |:--          |:--
+   &nbsp;   | Action  | RVL       | DoPlaySheet | **sheetName** | **string** | `dstsheet`
+   &nbsp;   | Param  |            |            |  `dstmap` | **expression** | `srcmap`
 
 Here is how it looks in this example:
 
@@ -27,3 +27,5 @@ In this case the mapping is following:
 * Destination sheet: `TestLogins`
 * Map name on Source Sheet: `ManyRows`
 * Map name on Destination Sheet: `LoginNames`
+
+
