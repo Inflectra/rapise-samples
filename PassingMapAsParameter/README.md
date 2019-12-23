@@ -1,3 +1,5 @@
+![Download](https://github.githubassets.com/images/icons/emoji/unicode/23ec.png?v8) [Download Now](https://inflectra.github.io/DownGit/#/home?url=https://github.com/Inflectra/rapise-samples/tree/master/PassingMapAsParameter)
+
 # Passing Map as Parameter
 
 This this sample explains mapping of parameters when you pass a Map as a parameter.
