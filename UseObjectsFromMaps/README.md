@@ -9,7 +9,7 @@ Sometimes you need to specify object and data for it in the map. Here we will sh
 
 We have a simple map `FieldData` with 2 columns: `Field` - name of Rapise Object, available in the Object Tree and `Data` - value to put into it using `DoSetText`.
 
-We are using [Global.DoWaitFor]() to find an object. The side effect of `Global.DoWaitFor` is that it returns and object when found. And Rapise may access it via `LastResult`.
+We are using [Global.DoWaitFor](https://rapisedoc.inflectra.com/Libraries/Global/#DoWaitFor) to find an object. The side effect of `Global.DoWaitFor` is that it returns and object when found. And Rapise may access it via `LastResult`.
 
 ![Mapping](img/mapping.png)
 
