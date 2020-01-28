@@ -58,14 +58,6 @@
           </TestFile>
         </TestFiles>
       </TestGroup>
-      <TestGroup>
-        <Name>RTF-parser</Name>
-        <IsFilterGroup>true</IsFilterGroup>
-        <FilterWildcard>*.*</FilterWildcard>
-        <FilterPath>RTF-parser</FilterPath>
-        <Groups />
-        <TestFiles />
-      </TestGroup>
     </Groups>
     <TestFiles>
       <TestFile>
@@ -76,6 +68,9 @@
       </TestFile>
       <TestFile>
         <Path>Objects.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>README.md</Path>
       </TestFile>
       <TestFile>
         <Path>User.js</Path>

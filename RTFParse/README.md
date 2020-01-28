@@ -19,3 +19,6 @@ function CompareWithRTF(/**string*/rtfPath, /**string*/expectedText, /**string*/
 ```
 Compare text in RTF file and add an assertion with specified message.
 
+## Usage
+
+Copy contents of User.js into User.js of your test.
