@@ -1,8 +1,6 @@
 //Put your custom functions and variables in this file
 
 
-
-
 function RTF2Plain(/**string*/rtfPath)
 {
 	// https://stackoverflow.com/questions/29922771/convert-rtf-to-and-from-plain-text
@@ -27,13 +25,33 @@ function RTF2Plain(/**string*/rtfPath)
 	return plainText;
 }
 
-
-function CompareWithRTF(/**string*/rtfPath, /**string*/expectedText, /**string*/message)
+function RTF2PlainWordpad(/**string*/rtfPath)
 {
-	var rtfPlain = RTF2Plain(rtfPath);
+	Global.DoLaunch('wordpad.exe "'+rtfPath+'"')
+	Global.DoSleep(1000);
+	Global.DoSendKeys('^a')
+	Global.DoSleep(100);
+	Global.DoSendKeys('^c')
+	Global.DoSleep(100);
+	Global.DoSendKeys('%{F4}');
+	var res = Global.GetClipboardText();
+	res = Global.DoTrim(res);
+	Log(rtfPath+" text: \n"+res);
+	return res;
+}
+
+function CompareWithRTF(/**string*/rtfPath, /**string*/expectedText, /**string*/message, /**boolean*/useWordpad)
+{
+	if(useWordpad)
+	{
+		var rtfPlain = RTF2PlainWordpad(rtfPath);
+	} else {
+		var rtfPlain = RTF2Plain(rtfPath);
+	}
 	
 	message = message || expectedText;
 	
 	Tester.AssertEqual(message, rtfPlain, expectedText);
 	return rtfPlain;
 }
+
