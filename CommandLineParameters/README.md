@@ -1,3 +1,5 @@
+![Download](https://github.githubassets.com/images/icons/emoji/unicode/23ec.png?v8) [Download Now](https://inflectra.github.io/DownGit/#/home?url=https://github.com/Inflectra/rapise-samples/tree/master/CommandLineParameters)
+
 # CommandLineParameters
 
 The test demonstrates how to launch a Rapise test and pass parameters to it from the command line.
