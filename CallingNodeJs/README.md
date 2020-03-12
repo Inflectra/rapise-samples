@@ -8,8 +8,8 @@ This sample demonstrates calling script executed by NodeJS from Rapise.
 The whole call from Rapise JS looks like that:
 
 ```javascript
-	var res = SeSCallNodeJS('nodescript/index.js', {data:'ABC'});
-    Tester.Message('md5: '+res.data);
+var res = SeSCallNodeJS('nodescript/index.js', {data:'ABC'});
+Tester.Message('md5: '+res.data);
 ```
 
 ## Calling Function
