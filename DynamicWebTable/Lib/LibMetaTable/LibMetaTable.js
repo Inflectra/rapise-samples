@@ -172,13 +172,12 @@ var SeSHTMLMetaTableRule = new SeSMatcherRule(
 	{
 		object_type: "HTMLMetaTable",
 		extend_rule: "HTMLObject",
-		object_flavor: "Grid",
 		
 		extended_properties: {
-			xpath_rowcount: "count(.//div[@role='row' and span[@role='cell']])",
-			xpath_colcount: "count(.//span[@role='columnheader'])",
-			xpath_cell: ".//div[@role='row' and span[@role='cell']][{row}]/span[@role='cell'][{col}]",
-			xpath_column: ".//span[@role='columnheader'][{col}]"
+			xpath_rowcount: "count(.//tr[td])",
+			xpath_colcount: "count(.//tr[1]/th)",
+			xpath_cell: ".//tr[td][{row}]/*[{col}]",
+			xpath_column: ".//tr[1]/th[{col}]"
 		},
 		dont_hash: true,
 		
