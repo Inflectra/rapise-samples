@@ -7,4 +7,4 @@ This test opens a table with books on `Library Information System` website and s
 It also shows usage of
 
 - user library,
-- HTML meta table.
+- HTML meta table (see https://github.com/Inflectra/rapise-powerpack/tree/master/DOMMetaTable).

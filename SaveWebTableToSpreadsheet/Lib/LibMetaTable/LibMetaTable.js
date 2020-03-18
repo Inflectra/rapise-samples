@@ -7,7 +7,12 @@ var HTMLMetaTableBehavior = {
 			actionName: "ClickCell",
 			/** @action */
 			DoAction: HTMLMetaTableBehavior_DoClickCell
-		}	
+		},
+		{
+			actionName: "ClickText",
+ 		    /** @action */
+			DoAction: Grid_Common_DoClickText 
+		}
 	],
 	properties:
 	{
@@ -43,7 +48,7 @@ var HTMLMetaTableBehavior = {
 	}
 }
 
-function HTMLMetaTableBehavior_DoClickCell(/**number*/ row, /**string|number*/ col, /**string*/ clickType, /**number*/ xOffset, /**number*/ yOffset)
+function HTMLMetaTableBehavior_DoClickCell(/**string|number*/ row, /**string|number*/ col, /**string*/ clickType, /**number*/ xOffset, /**number*/ yOffset)
 {
 	var cell = HTMLMetaTableBehavior_FindCell.apply(this, [row, col]);
 	if (cell)
@@ -159,12 +164,38 @@ function HTMLMetaTableBehavior_FindCell(row, col)
 		}
 	}
 
-	var _xpath =  _SeSGetObjectInfo(this.object_id).xpath_cell;
-	var cell = this._DoDOMQueryXPath(_xpath.replace("{row}", row + 1).replace("{col}", col + 1));
-	if (cell && cell.length > 0)
+
+	if( typeof(row) == "string" )
 	{
-		return cell[0];
+		var rc = HTMLMetaTableBehavior_GetRowCount.apply(this, []);
+		
+		if(rc > 0)
+		{
+			for(var r=0;r<rc;r++)
+			{
+				var cell = HTMLMetaTableBehavior_FindCell.apply(this, [r, col]);
+				if (cell)
+				{
+					cellText = cell.GetInnerText();
+					if( SeSCheckString(row, cellText) )
+					{
+						return cell;
+					}
+				}
+			}
+		} else {
+			return null;
+		}
+		
+	} else {
+		var _xpath =  _SeSGetObjectInfo(this.object_id).xpath_cell;
+		var cell = this._DoDOMQueryXPath(_xpath.replace("{row}", row + 1).replace("{col}", col + 1));
+		if (cell && cell.length > 0)
+		{
+			return cell[0];
+		}
 	}
+
 }
 
 /** @rule */
