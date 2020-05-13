@@ -4,6 +4,12 @@
 
 This Sample demonstrates use of custom columns in RVL.
 
+## How to Enable
+You need to copy contents of the [User.js](User.js) file into your project and this will enable the magic for the column H.
+
+
+## How to Use
+
 Once the function is installed in `User.js` the behavior of the H column is the following:
 
 For each `Action` row contents of H cell is checked.
@@ -25,3 +31,6 @@ In this example we see the following behavior:
 3. Row 13. **baw** - capture full window image before and after action.
 4. Row 21. **a** - capture full screen after an action.
 
+As a result we see that final report contains images at the requested places:
+
+![Report](img/ScreenshotColumnReport.png)
