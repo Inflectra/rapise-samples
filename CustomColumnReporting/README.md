@@ -15,7 +15,7 @@ Our goal is to have a custom message instead of `1.DoClick([])`.
 ## Solution
 1. Rapise enables one to override its default functionality. For example, one may change the behavior of [Tester.Assert](https://rapisedoc.inflectra.com/Libraries/Tester/#assert) that is used internally by the action to report its status.
 
-2. In RVL one may assign special behaviors to columns **H**, **I** and **J**. For example, here we enable fine control over screenshots via the [custom column](https://github.com/Inflectra/rapise-samples/tree/master/CustomColumnScreenshots). Here we also want to use custom column, to contain corrected message for the assertion.
+2. In RVL one may assign special behaviors to columns **H**, **I** and **J**. For example, here we enable fine control over screenshots via the [custom column](https://github.com/Inflectra/rapise-samples/tree/master/CustomColumnScreenshots). Here we also want to use a custom column to contain corrected message for the assertion.
 
 This solution uses both methods to achieve the desired effect.
 
