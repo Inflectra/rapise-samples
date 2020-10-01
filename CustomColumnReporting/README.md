@@ -45,3 +45,4 @@ If you want to override the reporting from JavaScript, use `SetReportMsg("custom
 
 Sometimes we use more than one extended column. For example, **H** may contain requirement ID, **I** may control screenshots and **J** the report message. In this case you should change the value of `g_controlColumnForReport` variable from "H" to "J" and merge the body of `OnRVLScriptStep` function defined for each of the columns.
 
+By default RVL displays only first custom column (**H**). If you want to make **I** and **J** visible, open RVL as Spreadsheet (using context menu in the files tree) and assign some values for cells **H**, **I**, **J** in the 1st Row of the spreadsheet. Then open it again as RVL.
