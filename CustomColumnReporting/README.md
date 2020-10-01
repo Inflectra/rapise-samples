@@ -1,3 +1,5 @@
+![Download](https://github.githubassets.com/images/icons/emoji/unicode/23ec.png?v8) [Download Now](https://inflectra.github.io/DownGit/#/home?url=https://github.com/Inflectra/rapise-samples/tree/master/CustomColumnReporting)
+
 # Customize Rapise Report Messages
 
 Sometimes we need to override the message written to the report when some action is performed.
