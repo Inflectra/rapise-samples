@@ -11,5 +11,5 @@ function TestInit()
 
 function TestFinish()
 {
-	//Navigator.Close();
+	Navigator.Close();
 }
