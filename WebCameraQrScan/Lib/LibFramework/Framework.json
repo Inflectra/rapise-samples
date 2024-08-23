@@ -1,0 +1,34 @@
+{
+	"testsets": [
+		{
+			"id": "c4751fc1",
+			"name": "Default",
+			"description": "Default test set",
+			"configId": "e0e47458",
+			"testcases": []
+		}
+	],
+	"pageobjects": {},
+	"testcases": [
+		{
+			"name": "ScanQR",
+			"alias": "ScanQR",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\ScanQR\\Test.sstest",
+			"tags": "testcase",
+			"id": "VCOQYX83",
+			"rep": "%WORKDIR%TestCases\\ScanQR\\Objects.js",
+			"user": "%WORKDIR%TestCases\\ScanQR\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "558B2906819714AAD1B3B5FF6E172E9919726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B867C86B9F9E1C77FB078AAE414FAC4C52FB3C219B6A437B7C2D7C271A13C1D887A"
+		}
+	],
+	"shared": [
+		{
+			"js": "%WORKDIR%Common.js",
+			"recorder": true
+		}
+	]
+}
