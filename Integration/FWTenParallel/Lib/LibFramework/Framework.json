@@ -1,0 +1,424 @@
+{
+	"pageobjects": {
+		"POMeasured": {
+			"id": "8Z7KVU2E",
+			"tags": "pageobject",
+			"js": "%WORKDIR%PageObjects\\POMeasured\\POMeasured.js",
+			"vpath": "",
+			"user": "%WORKDIR%PageObjects\\POMeasured\\User.js",
+			"sstest": "%WORKDIR%PageObjects\\POMeasured\\Test.sstest",
+			"rep": "%WORKDIR%PageObjects\\POMeasured\\Objects.js",
+			"libraries": [
+				"Web"
+			],
+			"hash": "666773D8ED1839B703245B118F1E4F8519726ADB7C29208FAF087DD4C34EEF3FA2070F7B212C61DF70886E47624EF9A1B16149B86E5CEBD2C0FD5D050229AF43BC91FC6E6AABB70AA42072B2E421ED89"
+		}
+	},
+	"testcases": [
+		{
+			"name": "TC01",
+			"alias": "TC01",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC01\\Test.sstest",
+			"tags": "testcase,even",
+			"id": "P2LV6Z7S",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC01\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC01\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "D29A8E6FAC1775BD5875EE6BA110551919726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC02",
+			"alias": "TC02",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC02\\Test.sstest",
+			"tags": "testcase,odd",
+			"id": "0K1PYDPQ",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC02\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC02\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "272941B85F2060CB5176147C9F78518319726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC03",
+			"alias": "TC03",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC03\\Test.sstest",
+			"tags": "testcase,even",
+			"id": "MWK2AJ48",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC03\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC03\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "BD86B55D809103638517810EE50F0E6119726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC04",
+			"alias": "TC04",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC04\\Test.sstest",
+			"tags": "testcase,odd",
+			"id": "MF6YIZUJ",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC04\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC04\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "ADEEB7C56DB7EE32BC99B2D64C7386E519726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC05",
+			"alias": "TC05",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC05\\Test.sstest",
+			"tags": "testcase,even",
+			"id": "9V7UWEHZ",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC05\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC05\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "37F1FF48A2A9DDA075C620DB92862F3C19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC06",
+			"alias": "TC06",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC06\\Test.sstest",
+			"tags": "testcase,odd",
+			"id": "HDZT9732",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC06\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC06\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "EE8E5F31050ACA5F1A8E7B69EA34750519726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC07",
+			"alias": "TC07",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC07\\Test.sstest",
+			"tags": "testcase,even",
+			"id": "5JVDZE0T",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC07\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC07\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "75094699610EFF7EC70A38F4F171DB1C19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC08",
+			"alias": "TC08",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC08\\Test.sstest",
+			"tags": "testcase,odd",
+			"id": "87R39LP8",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC08\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC08\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "8BD53A010C57D4CDB2C0087DBF7C8B3719726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC09",
+			"alias": "TC09",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC09\\Test.sstest",
+			"tags": "testcase,even",
+			"id": "GYD2JHHV",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC09\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC09\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "60CD0FF67C4226E37914D4B8258FB7F819726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E828FC242A7CA0CFB31D2DE3F07745D2"
+		},
+		{
+			"name": "TC10",
+			"alias": "TC10",
+			"vpath": "OneMinute",
+			"sstest": "%WORKDIR%TestCases\\OneMinute\\TC10\\Test.sstest",
+			"tags": "testcase,odd,failing",
+			"id": "OD5AYBWZ",
+			"rep": "%WORKDIR%TestCases\\OneMinute\\TC10\\Objects.js",
+			"user": "%WORKDIR%TestCases\\OneMinute\\TC10\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "BA34247C9DA09698B6922DC0789723D819726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF438E6E5F7214ADA2FA81B05BEC55615F16"
+		}
+	],
+	"shared": [
+		{
+			"js": "%WORKDIR%Common.js"
+		}
+	]
+}

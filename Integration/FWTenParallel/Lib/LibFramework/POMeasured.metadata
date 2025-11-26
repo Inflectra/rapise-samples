@@ -1,0 +1,21 @@
+{
+	"POMeasured": {
+		"window_name": "PageObjects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "DoOneMinute",
+				"description": "DoOneMinute description",
+				"type": "object",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\POMeasured\\Main.rvl.xlsx(DoOneMinute,1,1)"
+			}
+		],
+		"description": "Page object executing an action for fixed amount of time\n",
+		"isPageObject": true,
+		"extend_rule": "",
+		"src": "%WORKDIR%PageObjects\\POMeasured\\Main.rvl.xlsx"
+	}
+}

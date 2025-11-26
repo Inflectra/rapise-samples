@@ -1,0 +1,16 @@
+{
+  "params": [
+    {
+      "name": "Browser",
+      "defaultValue": "Selenium - Chrome",
+      "type": "browser",
+      "description": "Please, specify browser type to use"
+    }
+  ],
+  "configs": [
+    {
+      "name": "Default",
+      "id": "e7abd32c-588f-4a19-9a4a-74fa040869a0"
+    }
+  ]
+}
