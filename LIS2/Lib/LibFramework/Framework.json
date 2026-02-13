@@ -1,0 +1,186 @@
+{
+	"testsets": [
+		{
+			"id": "301a01d4",
+			"name": "All LIS2 Tests",
+			"description": "",
+			"configId": "22a923fc",
+			"testcases": [
+				{
+					"id": "ALUN1DVM"
+				},
+				{
+					"id": "1DLG2HYE"
+				}
+			]
+		},
+		{
+			"id": "68cf75e8",
+			"name": "All LIS2 Tests w Failed",
+			"description": "",
+			"configId": "22a923fc",
+			"testcases": [
+				{
+					"id": "XLY57R8X"
+				},
+				{
+					"id": "ALUN1DVM"
+				},
+				{
+					"id": "1DLG2HYE"
+				}
+			]
+		},
+		{
+			"id": "3301aa6e",
+			"name": "Default",
+			"description": "Default test set",
+			"configId": "22a923fc",
+			"testcases": []
+		}
+	],
+	"pageobjects": {},
+	"testcases": [
+		{
+			"name": "LIS_ReactSanityCheck",
+			"alias": "LIS_ReactSanityCheck",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\LIS_ReactSanityCheck\\Test.sstest",
+			"tags": "testcase",
+			"id": "1DLG2HYE",
+			"rep": "%WORKDIR%TestCases\\LIS_ReactSanityCheck\\Objects.js",
+			"user": "%WORKDIR%TestCases\\LIS_ReactSanityCheck\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"Detect Web Plugins": {
+					"Name": "Detect Web Plugins",
+					"DefaultValue": "false",
+					"Variable": "g_webPluginsAutoDetect",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "E671144E14501F5A9A978008E34DDFA319726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86E7BFB6E1D7F2256FB174BA497D8349CDE86382CF50B32EA5ABC8A4BD7E341380"
+		},
+		{
+			"name": "LIS_AngularSanityCheck",
+			"alias": "LIS_AngularSanityCheck",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\LIS_AngularSanityCheck\\Test.sstest",
+			"tags": "testcase",
+			"id": "ALUN1DVM",
+			"rep": "%WORKDIR%TestCases\\LIS_AngularSanityCheck\\Objects.js",
+			"user": "%WORKDIR%TestCases\\LIS_AngularSanityCheck\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"Detect Web Plugins": {
+					"Name": "Detect Web Plugins",
+					"DefaultValue": "false",
+					"Variable": "g_webPluginsAutoDetect",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "969035CE3A0F7265B52EC378292C31DD19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86E3A869BF0F6A5FE3E2A31A4B9F0575C35938D879B540D9DE13FA06399541CDB6"
+		},
+		{
+			"name": "LIS_FailedTestCase",
+			"alias": "LIS_FailedTestCase",
+			"vpath": "",
+			"sstest": "%WORKDIR%TestCases\\LIS_FailedTestCase\\Test.sstest",
+			"tags": "testcase",
+			"id": "XLY57R8X",
+			"rep": "%WORKDIR%TestCases\\LIS_FailedTestCase\\Objects.js",
+			"user": "%WORKDIR%TestCases\\LIS_FailedTestCase\\User.js",
+			"libraries": [
+				"Web"
+			],
+			"testParams": {
+				"Browser": {
+					"Name": "Browser",
+					"DefaultValue": "Selenium - Chrome",
+					"Variable": "g_browserLibrary",
+					"Ask": true,
+					"Output": false,
+					"Options": ""
+				},
+				"Record Title": {
+					"Name": "Record Title",
+					"DefaultValue": "regex:.*",
+					"Variable": "g_rWnd",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				},
+				"RVL Script": {
+					"Name": "RVL Script",
+					"DefaultValue": "Main.rvl.xlsx",
+					"Variable": "g_rvlScriptPath",
+					"Ask": false,
+					"Output": false,
+					"Options": ""
+				}
+			},
+			"hash": "22D7DDFA4F1EDEEA86D4ACAB7CFE800D19726ADB7C29208FAF087DD4C34EEF3FE64ECF2074AF8390245C334763481B86B16149B86E5CEBD2C0FD5D050229AF43E7EA66E9D2AF212EB477CC963D755BB3"
+		}
+	],
+	"shared": [
+		{
+			"js": "%WORKDIR%Common.js"
+		}
+	]
+}
