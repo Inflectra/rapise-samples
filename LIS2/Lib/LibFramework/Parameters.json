@@ -7,16 +7,14 @@
 		},
 		{
 			"name": "Browser",
-			"defaultValue": "Selenium - Chrome",
 			"type": "browser",
-			"description": "Please, specify browser type to use"
+			"defaultValue": "Selenium - ChromeHeadless"
 		}
 	],
 	"configs": [
 		{
 			"id": "22a923fc",
-			"name": "Default",
-			"values": {}
+			"name": "Default"
 		}
 	]
 }
