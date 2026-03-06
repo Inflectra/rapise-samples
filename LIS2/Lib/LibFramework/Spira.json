@@ -1,9 +1,38 @@
 {
-	"projectId": 0,
-	"testCasesFolderId": 0,
-	"testSetsFolderId": 0,
-	"repositoryFolderId": 0,
-	"repositoryJsonDocumentId": 0,
-	"testcases": [],
-	"testsets": []
+	"projectId": 370,
+	"testCasesFolderId": 1276,
+	"testSetsFolderId": 195,
+	"repositoryFolderId": 1115,
+	"repositoryJsonDocumentId": 29149,
+	"testcases": [
+		{
+			"id": "1DLG2HYE",
+			"spiraId": 28608,
+			"properties": []
+		},
+		{
+			"id": "ALUN1DVM",
+			"spiraId": 28609,
+			"properties": []
+		},
+		{
+			"id": "XLY57R8X",
+			"spiraId": 28610,
+			"properties": []
+		}
+	],
+	"testsets": [
+		{
+			"id": "301a01d4",
+			"spiraId": 1560
+		},
+		{
+			"id": "3301aa6e",
+			"spiraId": 1561
+		},
+		{
+			"id": "68cf75e8",
+			"spiraId": 1562
+		}
+	]
 }

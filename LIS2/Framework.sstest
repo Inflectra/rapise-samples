@@ -76,13 +76,13 @@
     <TestParam name="Browser" variable="g_browserLibrary" defaultValue="Selenium - Chrome" description="Please, specify browser type to use" output="false" ask="true">
       <PossibleValues />
     </TestParam>
-    <TestParam name="ServerProjectId" variable="g_serverProjectId" defaultValue="9" output="false" ask="false">
+    <TestParam name="ServerProjectId" variable="g_serverProjectId" defaultValue="370" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="ServerTestCaseFolderId" variable="g_serverTestCaseFolderId" defaultValue="676" output="false" ask="false">
+    <TestParam name="ServerTestCaseFolderId" variable="g_serverTestCaseFolderId" defaultValue="1276" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="ServerTestCaseId" variable="g_serverTestCaseId" defaultValue="4666" output="false" ask="false">
+    <TestParam name="ServerTestCaseId" variable="g_serverTestCaseId" defaultValue="28607" output="false" ask="false">
       <PossibleValues />
     </TestParam>
     <TestParam name="Source Type" variable="g_serverRepositoryType" defaultValue="git" output="false" ask="false">
