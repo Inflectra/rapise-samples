@@ -1,0 +1,264 @@
+{
+	"LisRest": {
+		"window_name": "PageObjects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "DoLogin",
+				"description": "Perform a login action.  \r\n@param {String} username - The username for login.  \r\n@param {String} password - The password for login.  \r\n@returns {Boolean} - Returns true if the login was successful, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/username, /**string*/ password",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(14,10)"
+			},
+			{
+				"name": "DoCreateAuthor",
+				"description": "Perform a create author action.\r\n@param {String} name - The name of the author.\r\n@param {Number} age - The age of the author.\r\n@returns {Number|Boolean} - Returns author id if the author was successfully created, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ name, /**number*/ age",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(33,10)"
+			},
+			{
+				"name": "DoDeleteAuthor",
+				"description": "Perform a delete author action.\r\n@param {Number} id - The ID of the author to delete.\r\n@returns {Boolean} - Returns true if the author was successfully deleted, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number*/ id",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(65,10)"
+			},
+			{
+				"name": "DoGetAuthors",
+				"description": "Get all authors in the system.\r\n@returns {Array|Boolean} - An array of author objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(94,10)"
+			},
+			{
+				"name": "DoUpdateAuthor",
+				"description": "Update an existing author.\r\n@param {Number} id - The ID of the author to update.\r\n@param {String} [name] - The new name of the author.\r\n@param {Number} [age] - The new age of the author.\r\n@returns {Object|Boolean} - The updated author object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number*/ id, /**string*/ name, /**number*/ age",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(116,10)"
+			},
+			{
+				"name": "DoCountAuthors",
+				"description": "Get the total number of authors.\r\n@returns {Number|Boolean} - The count of authors on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(143,10)"
+			},
+			{
+				"name": "DoGetAuthor",
+				"description": "Get a single author by their ID or name.\r\n@param {Number|String} idOrName - The ID or name of the author to retrieve.\r\n@returns {Object|Boolean} - The author object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number|string*/ idOrName",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(163,10)"
+			},
+			{
+				"name": "DoFindAuthor",
+				"description": "Find authors by a partial name match.\r\n@param {String} namePart - The partial name to search for.\r\n@returns {Array|Boolean} - An array of matching author objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ namePart",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(184,10)"
+			},
+			{
+				"name": "DoGetBooks",
+				"description": "Get all books in the system.\r\n@returns {Array|Boolean} - An array of book objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(203,10)"
+			},
+			{
+				"name": "DoCreateBook",
+				"description": "Create a new book.\r\n@param {String} name - The name of the book.\r\n@param {Number} author - The ID of the author.\r\n@param {Number} genre - The ID of the genre.\r\n@param {String} [dateAdded] - The ISO 8601 date-time string.\r\n@param {Boolean} [outOfPrint] - Whether the book is out of print.\r\n@returns {Number|Boolean} - The ID of the newly created book on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ name, /**number*/ author, /**number*/ genre, /**string*/ dateAdded, /**boolean*/ outOfPrint",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(227,10)"
+			},
+			{
+				"name": "DoUpdateBook",
+				"description": "Update an existing book.\r\n@param {Number} id - The ID of the book to update.\r\n@param {String} [name] - The new name of the book.\r\n@param {Number} [author] - The new author ID.\r\n@param {Number} [genre] - The new genre ID.\r\n@param {String} [dateAdded] - The new date added string.\r\n@param {Boolean} [outOfPrint] - The new out of print status.\r\n@returns {Object|Boolean} - The updated book object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number*/ id, /**string*/ name, /**number*/ author, /**number*/ genre, /**string*/ dateAdded, /**boolean*/ outOfPrint",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(263,10)"
+			},
+			{
+				"name": "DoCountBooks",
+				"description": "Get the total number of books.\r\n@returns {Number|Boolean} - The count of books on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(293,10)"
+			},
+			{
+				"name": "DoGetBook",
+				"description": "Get a single book by its ID or name.\r\n@param {Number|String} idOrName - The ID or name of the book to retrieve.\r\n@returns {Object|Boolean} - The book object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number|string*/ idOrName",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(313,10)"
+			},
+			{
+				"name": "DoFindBook",
+				"description": "Find books by a partial name match.\r\n@param {String} namePart - The partial name to search for.\r\n@returns {Array|Boolean} - An array of matching book objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ namePart",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(334,10)"
+			},
+			{
+				"name": "DoDeleteBook",
+				"description": "Delete a book from the system.\r\n@param {Number} id - The ID of the book to delete.\r\n@returns {Boolean} - True on successful deletion, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number*/ id",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(355,10)"
+			},
+			{
+				"name": "DoGetGenres",
+				"description": "Get all genres in the system.\r\n@returns {Array|Boolean} - An array of genre objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(379,10)"
+			},
+			{
+				"name": "DoCreateGenre",
+				"description": "Create a new genre.\r\n@param {String} name - The name of the new genre.\r\n@returns {Number|Boolean} - The ID of the new genre on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ name",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(399,10)"
+			},
+			{
+				"name": "DoCountGenres",
+				"description": "Get the total number of genres.\r\n@returns {Number|Boolean} - The count of genres on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(423,10)"
+			},
+			{
+				"name": "DoGetGenre",
+				"description": "Get a single genre by its ID or name.\r\n@param {Number|String} idOrName - The ID or name of the genre to retrieve.\r\n@returns {Object|Boolean} - The genre object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number|string*/ idOrName",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(443,10)"
+			},
+			{
+				"name": "DoDeleteGenre",
+				"description": "Delete a genre from the system.\r\n@param {Number} id - The ID of the genre to delete.\r\n@returns {Boolean} - True on successful deletion, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**number*/ id",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(464,10)"
+			},
+			{
+				"name": "DoKeepAlive",
+				"description": "Keep the current session alive.\r\n@returns {Boolean} - True if the session is still active, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(488,10)"
+			},
+			{
+				"name": "DoLogout",
+				"description": "End the current session.\r\n@returns {Boolean} - True on successful logout, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(501,10)"
+			},
+			{
+				"name": "DoGetUsers",
+				"description": "Get all users in the system.\r\n@returns {Array|Boolean} - An array of user objects on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(515,10)"
+			},
+			{
+				"name": "DoCreateUser",
+				"description": "Create a new user.\r\n@param {String} username - The username.\r\n@param {String} password - The password.\r\n@param {String} name - The full name.\r\n@param {Boolean} active - The active status.\r\n@param {Number} permission - The permission level (0-3).\r\n@returns {Object|Boolean} - The created user object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ username, /**string*/ password, /**string*/ name, /**boolean*/ active, /**number*/ permission",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(539,10)"
+			},
+			{
+				"name": "DoGetOrg",
+				"description": "Get the organization ID for this API.\r\n@returns {String|Boolean} - The organization ID string on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(568,10)"
+			},
+			{
+				"name": "DoSelfTest",
+				"description": "Perform a quick self-test to check if the endpoint is alive.\r\n@returns {String|Boolean} - The test response string on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(586,10)"
+			},
+			{
+				"name": "DoGetUser",
+				"description": "Get a single user by their username.\r\n@param {String} username - The username of the user to retrieve.\r\n@returns {Object|Boolean} - The user object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ username",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(606,10)"
+			},
+			{
+				"name": "DoUpdateUser",
+				"description": "Update an existing user's information.\r\n@param {String} username - The username of the user to update (cannot be changed).\r\n@param {String} [password] - The new password.\r\n@param {String} [name] - The new full name.\r\n@param {Boolean} [active] - The new active status.\r\n@param {Number} [permission] - The new permission level.\r\n@returns {Object|Boolean} - The updated user object on success, otherwise false.\r\n",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ username, /**string*/ password, /**string*/ name, /**boolean*/ active, /**number*/ permission",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js(636,10)"
+			}
+		],
+		"isPageObject": true,
+		"extend_rule": "",
+		"description": "LisRest description",
+		"src": "%WORKDIR%PageObjects\\LisRest\\LisRest.js"
+	}
+}

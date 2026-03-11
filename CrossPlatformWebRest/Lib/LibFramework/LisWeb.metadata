@@ -1,0 +1,67 @@
+{
+	"LisWeb": {
+		"window_name": "PageObjects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "DoLogin",
+				"description": "DoAction description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/usr, /**string*/pwd",
+				"paramInfo": {
+					"usr": {
+						"type": "string",
+						"defaultValue": "librarian"
+					},
+					"pwd": {
+						"type": "string",
+						"defaultValue": "librarian"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LisWeb\\Main.rvl.xlsx(DoLogin,1,1)"
+			},
+			{
+				"name": "DoLogout",
+				"description": "DoLogout description",
+				"type": "object",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {},
+				"src": "%WORKDIR%PageObjects\\LisWeb\\Main.rvl.xlsx(DoLogout,1,1)"
+			},
+			{
+				"name": "DoVerifyAuthorExists",
+				"description": "DoVerifyAuthorExists description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/name",
+				"paramInfo": {
+					"name": {
+						"type": "string",
+						"defaultValue": "TestAuthor"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LisWeb\\Main.rvl.xlsx(DoVerifyAuthorExists,1,1)"
+			},
+			{
+				"name": "DoVerifyAuthorDoesNotExist",
+				"description": "DoVerifyAuthorDoesNotExist description",
+				"type": "object",
+				"returns": "",
+				"signature": "/**string*/name",
+				"paramInfo": {
+					"name": {
+						"type": "string",
+						"defaultValue": "TestAuthor"
+					}
+				},
+				"src": "%WORKDIR%PageObjects\\LisWeb\\Main.rvl.xlsx(DoVerifyAuthorDoesNotExist,1,1)"
+			}
+		],
+		"description": "TODO: Object Description\n",
+		"isPageObject": true,
+		"extend_rule": "",
+		"src": "%WORKDIR%PageObjects\\LisWeb\\Main.rvl.xlsx"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"params": [
+		{
+			"name": "Command Interval",
+			"type": "number",
+			"defaultValue": 100
+		},
+		{
+			"name": "Browser",
+			"type": "browser",
+			"defaultValue": "Selenium - Chrome"
+		},
+		{
+			"name": "Screenshot On Failure",
+			"type": "boolean",
+			"defaultValue": false
+		},
+		{
+			"name": "Username",
+			"type": "string",
+			"defaultValue": "librarian"
+		},
+		{
+			"name": "Password",
+			"type": "password",
+			"defaultValue": "49qW6a9KLTE8P2lLydQjAQ=="
+		},
+		{
+			"name": "Organization",
+			"type": "string",
+			"defaultValue": "demo"
+		}
+	],
+	"configs": [
+		{
+			"id": "5eb24dd4",
+			"name": "Default"
+		}
+	]
+}
