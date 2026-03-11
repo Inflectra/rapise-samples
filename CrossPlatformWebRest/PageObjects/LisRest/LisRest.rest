@@ -1,0 +1,738 @@
+{
+  "BeforeCallCommon": "Before_LisRest",
+  "AfterCallCommon": null,
+  "RecordHeaders": false,
+  "RecordParameters": false,
+  "Name": "LisRest.rest",
+  "BaseName": "LisRest",
+  "Requests": [
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "Login",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/login?username={username}&password={password}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": "After_LisRest_Login",
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "username",
+          "TokenName": "{username}",
+          "Value": "librarian"
+        },
+        {
+          "Name": "password",
+          "TokenName": "{password}",
+          "Value": "librarian"
+        },
+        {
+          "Name": "organization",
+          "TokenName": "{organization}",
+          "Value": "demo"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetAuthors",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CreateAuthor",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors",
+      "Method": "POST",
+      "Body": "{\r\n\t\"name\": \"{name}\",\r\n\t\"age\": {age}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "TestAuthor"
+        },
+        {
+          "Name": "age",
+          "TokenName": "{age}",
+          "Value": "100"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "UpdateAuthor",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors",
+      "Method": "PUT",
+      "Body": "{\r\n\t\"id\": {id},\r\n\t\"name\": \"{name}\",\r\n\t\"age\": {age}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "id",
+          "TokenName": "{id}",
+          "Value": "111"
+        },
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "UpdatedAuthor"
+        },
+        {
+          "Name": "age",
+          "TokenName": "{age}",
+          "Value": "45"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CountAuthors",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors/count",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetAuthor",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors/{idOrName}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "idOrName",
+          "TokenName": "{idOrName}",
+          "Value": "111"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "FindAuthor",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors/find?namePart={namePart}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "namePart",
+          "TokenName": "{namePart}",
+          "Value": "Test"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "DeleteAuthor",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/authors/{id}",
+      "Method": "DELETE",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "id",
+          "TokenName": "{id}",
+          "Value": "111"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetBooks",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CreateBook",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books",
+      "Method": "POST",
+      "Body": "{\r\n\t\"name\": \"{name}\",\r\n\t\"author\": {author},\r\n\t\"genre\": {genre},\r\n\t\"dateAdded\": \"{dateAdded}\",\r\n\t\"outOfPrint\": {outOfPrint}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "Test Book"
+        },
+        {
+          "Name": "author",
+          "TokenName": "{author}",
+          "Value": "111"
+        },
+        {
+          "Name": "genre",
+          "TokenName": "{genre}",
+          "Value": "1"
+        },
+        {
+          "Name": "dateAdded",
+          "TokenName": "{dateAdded}",
+          "Value": "2023-10-01T00:00:00Z"
+        },
+        {
+          "Name": "outOfPrint",
+          "TokenName": "{outOfPrint}",
+          "Value": "false"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "UpdateBook",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books",
+      "Method": "PUT",
+      "Body": "{\r\n\t\"id\": {id},\r\n\t\"name\": \"{name}\",\r\n\t\"author\": {author},\r\n\t\"genre\": {genre},\r\n\t\"dateAdded\": \"{dateAdded}\",\r\n\t\"outOfPrint\": {outOfPrint}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "id",
+          "TokenName": "{id}",
+          "Value": "1"
+        },
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "Test Book"
+        },
+        {
+          "Name": "author",
+          "TokenName": "{author}",
+          "Value": "111"
+        },
+        {
+          "Name": "genre",
+          "TokenName": "{genre}",
+          "Value": "1"
+        },
+        {
+          "Name": "dateAdded",
+          "TokenName": "{dateAdded}",
+          "Value": "2023-10-01T00:00:00Z"
+        },
+        {
+          "Name": "outOfPrint",
+          "TokenName": "{outOfPrint}",
+          "Value": "false"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CountBooks",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books/count",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetBook",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books/{idOrName}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "idOrName",
+          "TokenName": "{idOrName}",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "FindBook",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books/find?namePart={namePart}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "namePart",
+          "TokenName": "{namePart}",
+          "Value": "Test"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "DeleteBook",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/books/{id}",
+      "Method": "DELETE",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "id",
+          "TokenName": "{id}",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetGenres",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/genres",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CreateGenre",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/genres",
+      "Method": "POST",
+      "Body": "{\r\n\t\"name\": \"{name}\"\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "Fantasy"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CountGenres",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/genres/count",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetGenre",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/genres/{idOrName}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "idOrName",
+          "TokenName": "{idOrName}",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "DeleteGenre",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/genres/{id}",
+      "Method": "DELETE",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "id",
+          "TokenName": "{id}",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "KeepAlive",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/keepalive",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "Logout",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/logout",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetUsers",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "CreateUser",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users",
+      "Method": "POST",
+      "Body": "{\r\n\t\"username\": \"{username}\",\r\n\t\"password\": \"{password}\",\r\n\t\"name\": \"{name}\",\r\n\t\"active\": {active},\r\n\t\"permission\": {permission}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "username",
+          "TokenName": "{username}",
+          "Value": "newuser"
+        },
+        {
+          "Name": "password",
+          "TokenName": "{password}",
+          "Value": "pass123"
+        },
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "New User"
+        },
+        {
+          "Name": "active",
+          "TokenName": "{active}",
+          "Value": "true"
+        },
+        {
+          "Name": "permission",
+          "TokenName": "{permission}",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetOrg",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/org",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "SelfTest",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/test",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": []
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "GetUser",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/{username}",
+      "Method": "GET",
+      "Body": "",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [],
+      "Parameters": [
+        {
+          "Name": "username",
+          "TokenName": "{username}",
+          "Value": "admin"
+        }
+      ]
+    },
+    {
+      "ProxyHost": null,
+      "ProxyPort": null,
+      "ProxyUser": null,
+      "ProxyPwd": null,
+      "Name": "UpdateUser",
+      "Url": "https://v3.libraryinformationsystem.org/{organization}/api/users/update",
+      "Method": "POST",
+      "Body": "{\r\n\t\"username\": \"{username}\",\r\n\t\"password\": \"{password}\",\r\n\t\"name\": \"{name}\",\r\n\t\"active\": {active},\r\n\t\"permission\": {permission}\r\n}",
+      "Credential": null,
+      "BeforeCallCommon": null,
+      "AfterCallCommon": null,
+      "BeforeCall": null,
+      "AfterCall": null,
+      "Headers": [
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        }
+      ],
+      "Parameters": [
+        {
+          "Name": "username",
+          "TokenName": "{username}",
+          "Value": "admin"
+        },
+        {
+          "Name": "password",
+          "TokenName": "{password}",
+          "Value": "pass123"
+        },
+        {
+          "Name": "name",
+          "TokenName": "{name}",
+          "Value": "Admin User"
+        },
+        {
+          "Name": "active",
+          "TokenName": "{active}",
+          "Value": "true"
+        },
+        {
+          "Name": "permission",
+          "TokenName": "{permission}",
+          "Value": "1"
+        }
+      ]
+    }
+  ]
+}
